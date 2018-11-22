@@ -71,7 +71,7 @@ The visualizations and analysis will use Python and the following libraries: <br
 Gensim: Loading and querying GloVe word embeddings. <br>
 Plot.ly, matplotlib: Visualizations. <br>
 numpy, pandas: basic data processing. <br>
-fastTest: Loading facebook fasttext models <br>
+fastText: Loading facebook fasttext models <br>
 
 ### References
 
