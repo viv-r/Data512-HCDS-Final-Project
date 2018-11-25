@@ -16,13 +16,24 @@ Description: (as described on the fasttext website)
 
 The pre-trained models listed in the link above are licensed under Creative Commons Attribution-Share-Alike License 3.0. https://creativecommons.org/licenses/by-sa/3.0/
 
+
 #### Stanford GloVe Models
 https://nlp.stanford.edu/projects/glove/
 
 Description:
 The data format for the text files is exactly the same as for FastText models listed above.
 
-The pre-trained models listed in the link above are licensed under Public Domain Dedication and License v1.0. http://www.opendatacommons.org/licenses/pddl/1.0/.
+The following models are available: (descriptions from https://nlp.stanford.edu/projects/glove)
+- Wikipedia 2014 + Gigaword 5 (6B tokens, 400K vocab)
+  - Source data: http://dumps.wikimedia.org/enwiki/20140102/ and https://catalog.ldc.upenn.edu/LDC2011T07
+- Common Crawl (42B tokens, 1.9M vocab)
+  - Source data: http://commoncrawl.org/the-data/
+- Common Crawl (840B tokens, 2.2M vocab)
+  - Source data: http://commoncrawl.org/the-data/
+- Twitter (2B tweets, 27B tokens, 1.2M vocab)
+  - Source data: From twitter using the script at https://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
+
+This project will not be using the original datasources of the models; I will be using the pre-trained models distributed by nlp.stanford.edu under the Public Domain Dedication and License v1.0. http://www.opendatacommons.org/licenses/pddl/1.0/.
 
 #### De-biasing Algorithm
 Github: https://github.com/tolga-b/debiaswe
@@ -48,7 +59,9 @@ The visualizations are expected to provide some insight to the various types of 
 
 ### Data/Model Limitations
 
-Most of the prior work in word embedding bias use a binary gender model. The de-biasing algorithm that I plan to use also has this limitation.
+- Most of the prior work in word embedding bias use a binary gender model. The de-biasing algorithm that I plan to use also has this limitation.
+
+- Give the same learning algorithm (either GloVe or fasttext), I suspect that any differences in the word associations being learnt would be indicators of common text patterns in the source websites. However, I also can't be sure that I will find significant differences between the sources.
 
 ### Research questions
 
