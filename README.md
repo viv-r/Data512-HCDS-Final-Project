@@ -56,6 +56,9 @@ How do web communities differ in their gender biases?
 
 ### Findings:
 
+![](./images/ft-cc.png)
+![](./images/ft-wiki.png)
+
 The above visualizations show all occupations along with their similarities to both the axes.
 If the model were perfectly unbiased, we would expect all the words to lie the x=y line through the origin.
 
