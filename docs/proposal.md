@@ -5,17 +5,7 @@
 
 Word embedding models like word2vec and GloVe are widely used today as the 'first-step' in most NLP pipelines. Several pre-trained models exist, and each model captures the biases of the community that had produced the raw text data on which the model was trained. This project will compare the biases (limited to gender, religion, and race) between different internet communities (Wikipedia, General Web Common Crawl, and Twitter) using word embedding models that were trained on text from those websites. A second goal of this project is to validate methods to de-bias these models and quantify the impact of de-biasing.
 
-
 ### Datasets and Pre-trained Models
-
-#### Facebook Fasttext Models
-https://fasttext.cc/docs/en/english-vectors.html <br>
-
-Description: (as described on the fasttext website)
->The first line of the file contains the number of words in the vocabulary and the size of the vectors. Each line contains a word followed by its vectors, like in the default fastText text format. Each value is space separated. Words are ordered by descending frequency.
-
-The pre-trained models listed in the link above are licensed under Creative Commons Attribution-Share-Alike License 3.0. https://creativecommons.org/licenses/by-sa/3.0/
-
 
 #### Stanford GloVe Models
 https://nlp.stanford.edu/projects/glove/
