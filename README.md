@@ -1,5 +1,5 @@
 ## DATA-512 Human Centered Data Science Final Project 
-Course link: https://wiki.communitydata.cc/Human_Centered_Data_Science_(Fall_2018)
+Course link: https://wiki.communitydata.cc/Human_Centered_Data_Science_(Fall_2018) <br />
 Report: http://nbviewer.jupyter.org/github/viv-r/Data512-HCDS-Final-Project/blob/master/Report.ipynb
 
 ### Abstract
