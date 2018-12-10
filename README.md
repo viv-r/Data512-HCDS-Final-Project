@@ -7,6 +7,11 @@ Word embedding models like word2vec and GloVe are widely used today as the 'firs
 
 ### Datasets and Pre-trained Models
 
+The models in the ./models folders are samples of the data files available from links below.
+The full models could not be uploaded to github given the file size restrictions.
+The code in the notebook should be executable if the models ending with the name '-sample' are replaces by
+the actual models from the links below.
+
 #### Facebook Fasttext Models
 - Common crawl dataset: https://s3-us-west-1.amazonaws.com/fasttext-vectors/crawl-300d-2M-subword.zip
 - Wikipedia dataset: https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.en.vec
@@ -65,6 +70,12 @@ If the model were perfectly unbiased, we would expect all the words to lie the x
 The spread of the points around this line is an indication of bias, and for the wikipedia data, most of the words seem clustered at about the same location around (0.15, 0.12), which shows a slight bias towards 'she' for the list of occupations we've chosen.
 
 Similar plots for the fasttext model trained on the Common craw data set shows the similarites have larger magnitudes in general. The cluster center in this case is very close to the x=y line suggesting that most of the occupations we've chosen are equally biased towards 'he' and 'she'
+
+![](./images/glove-cc1.png)
+![](./images/glove-cc2.png)
+![](./images/glove-twitter.png)
+
+The 3 plots above for the glove models show something different to the fast text models. The common crawl models both look relatively similar to each other. The twitter model looks clearly different to the other two, and seems to have two clusters - one close to the origin and one located at approximately (3.5,3). This suggests that, a subset of occupations are biased differently from the rest, but it not clear as to why this is so.
 
 ### References:
 
